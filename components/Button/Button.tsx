@@ -6,14 +6,6 @@ interface MyButtonProps {
   text: string;
 }
 
-export const MyButton = ({ onPress, text }: MyButtonProps) => {
-  return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
-  );
-};
-
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 16,
@@ -22,3 +14,11 @@ const styles = StyleSheet.create({
   },
   text: { color: 'black' },
 });
+
+const MyButton = ({ onPress, text }: MyButtonProps) => (
+  <TouchableOpacity style={styles.container} onPress={onPress}>
+    <Text style={styles.text}>{text}</Text>
+  </TouchableOpacity>
+);
+
+export default MyButton;

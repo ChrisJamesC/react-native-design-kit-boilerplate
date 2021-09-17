@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'universe/native',
+  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript'],
 };
