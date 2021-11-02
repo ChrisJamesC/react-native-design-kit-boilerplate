@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript'],
+  extends: "react-native-wcandillon",
 };
