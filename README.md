@@ -1,6 +1,6 @@
 # React-Native design kit boilerplace
 
-A boitler plate to implement design kit libraries.
+A boilerplate to implement design kit libraries.
 
 ## Expo Preview of the main branch 
 
