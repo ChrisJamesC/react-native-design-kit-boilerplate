@@ -16,10 +16,20 @@ jobs:
           packager: npm
           token: ${{ secrets.EXPO_TOKEN }}
           username: $${{ secrets.EXPO_CLI_USERNAME }}
-      - run: yarn install
-      - run: expo publish --release-channel=pr-${{ github.event.number }}
-      - uses: unsplash/comment-on-pr@master
+      - run: npm install
+      - name: Publish to Expo & create a QR code
+        uses: expo/expo-preview-action@v1
+        with:
+          channel: pr-${{ github.event.number }}
+        id: preview
+      - name: Comment deployment link
+        uses: unsplash/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: App is ready for review, you can [see it here](https://expo.dev/chrisjamesc/react-native-design-kit-boilerplate?release-channel=pr-${{ github.event.number }}).
+          check_for_duplicate_msg: true
+          msg: >
+            Awesome! You can [preview the PR here](${{ steps.preview.outputs.EXPO_QR_CODE_URL }}).<br><br>
+            <a href="${{ steps.publish.outputs.EXPO_QR_CODE_URL }}"><img src="${{ steps.preview.outputs.EXPO_QR_CODE_URL }}" height="100px" width="100px"></a>
+            <br><br>
+            ${{ steps.publish.outputs.EXPO_NEW_BUILD_IS_REQUIRED_MESSAGE }}
