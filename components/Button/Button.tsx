@@ -28,26 +28,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
   },
   text: {
-    /* label */
-
-    // position: "static",
-    // width: 39,
     top: 0,
     bottom: 0,
-
-    /* ButtonLabel/Default */
-
     fontStyle: 'normal',
     fontWeight: 'normal',
     fontSize: 16,
     lineHeight: 24,
-    /* identical to box height, or 150% */
-
     display: 'flex',
     alignItems: 'center',
-
     color: '#FFFFFF',
-
     flexGrow: 0,
     marginHorizontal: 8,
     marginVertical: 0,
