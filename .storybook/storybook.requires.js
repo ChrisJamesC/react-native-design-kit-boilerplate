@@ -22,8 +22,7 @@ if (parameters) {
 
 const getStories=() => {
   return [
-		require("../components/Button/Button.stories.tsx"), 
-		require("../components/Input/Input.stories.tsx")
+		require("../components/Button/Button.stories.tsx")
 	];
 }
 configure(getStories, module, false)

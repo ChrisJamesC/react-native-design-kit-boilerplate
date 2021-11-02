@@ -3,13 +3,14 @@ import { ComponentStory, ComponentMeta } from '@storybook/react-native';
 import MyButton from './Button';
 
 const MyButtonMeta: ComponentMeta<typeof MyButton> = {
-  title: 'MyButton',
+  title: 'Button',
   component: MyButton,
   argTypes: {
     onPress: { action: 'pressed the button' },
   },
   args: {
-    text: 'Hello world',
+    text: 'Hello World',
+    secondary: false,
   },
 };
 
@@ -17,4 +18,7 @@ export default MyButtonMeta;
 
 type MyButtonStory = ComponentStory<typeof MyButton>;
 
-export const Basic: MyButtonStory = (args) => <MyButton {...args} />;
+export const Primary: MyButtonStory = (args) => <MyButton {...args} />;
+export const Secondary: MyButtonStory = (args) => (
+  <MyButton {...args} secondary />
+);
