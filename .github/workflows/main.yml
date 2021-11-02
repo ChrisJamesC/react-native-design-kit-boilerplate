@@ -35,3 +35,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Expo GitHub Action
+        # You may pin to the exact commit or the version.
+        # uses: expo/expo-github-action@84e06132b21f3af2525ee4f5fcc727a2279adb02
+        uses: expo/expo-github-action@5.1.1
