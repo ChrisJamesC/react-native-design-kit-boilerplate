@@ -41,5 +41,5 @@ jobs:
         uses: expo/expo-github-action@6.0.0
         with: 
           expo-version: latest
-          expo-username: ${{ secrets.EXPO_USER }}
-          expo-password: ${{ secrets.EXPO_TOKEN }}
+          username: ${{ secrets.EXPO_USER }}
+          token: ${{ secrets.EXPO_TOKEN }}
