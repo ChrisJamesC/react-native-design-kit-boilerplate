@@ -8,7 +8,7 @@ A boitler plate to implement design kit libraries.
 
 
 ## Features: 
-✅ storybook
-✅ expo preview for each PR
-✅ expo publish of the app on master
-✅ expo QR code on README
+- ✅ storybook
+- ✅ expo preview for each PR
+- ✅ expo publish of the app on master
+- ✅ expo QR code on README
