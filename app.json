@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bitcoin-wallet-ui-kit",
-    "slug": "bitcoin-wallet-ui-kit",
+    "name": "ChrisJamesC/react-native-design-kit-boilerplate",
+    "slug": "react-native-design-kit-boilerplate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
