@@ -1,9 +1,10 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-interface MyButtonProps {
+export interface MyButtonProps {
   onPress: () => void;
   text: string;
+  secondary: boolean;
 }
 
 const styles = StyleSheet.create({
@@ -20,21 +21,22 @@ const styles = StyleSheet.create({
 
     /* Light/Neutral/G1000 */
 
-    backgroundColor: '#000000',
-    borderRadius: 24,
+    backgroundColor: 'green',
+    borderRadius: 12,
+  },
+  containerSecondary: {
+    backgroundColor: 'red',
   },
   text: {
     /* label */
 
     // position: "static",
-    width: 39,
-    left: 'calc(50% - 39px/2)',
+    // width: 39,
     top: 0,
     bottom: 0,
 
     /* ButtonLabel/Default */
 
-    fontFamily: 'Lab Grotesque',
     fontStyle: 'normal',
     fontWeight: 'normal',
     fontSize: 16,
@@ -44,21 +46,23 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
 
-    /* Light/Neutral/G000 */
-
     color: '#FFFFFF',
 
-    /* Inside Auto Layout */
-
-    // flex: "none",
-    // order: 1,
     flexGrow: 0,
-    margin: '0px 8px',
+    marginHorizontal: 8,
+    marginVertical: 0,
   },
 });
 
-const MyButton = ({ onPress, text }: MyButtonProps) => (
-  <TouchableOpacity style={styles.container} onPress={onPress}>
+const MyButton: React.FC<MyButtonProps> = ({
+  onPress,
+  text,
+  secondary = false,
+}: MyButtonProps) => (
+  <TouchableOpacity
+    style={[styles.container, secondary ? styles.containerSecondary : false]}
+    onPress={onPress}
+  >
     <Text style={styles.text}>{text}</Text>
   </TouchableOpacity>
 );

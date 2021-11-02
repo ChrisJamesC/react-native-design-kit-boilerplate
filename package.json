@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "prestart": "sbn-get-stories",
+    "prestart": "sb-rn-get-stories",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -16,8 +16,8 @@
     "@react-native-community/datetimepicker": "3.5.2",
     "@react-native-community/slider": "3.0.3",
     "@shopify/restyle": "^1.5.0",
-    "@storybook/addon-actions": "^6.3.8",
-    "@storybook/addon-controls": "^6.3.8",
+    "@storybook/addon-actions": "next",
+    "@storybook/addon-controls": "next",
     "@storybook/addon-ondevice-actions": "next",
     "@storybook/addon-ondevice-backgrounds": "next",
     "@storybook/addon-ondevice-controls": "next",
