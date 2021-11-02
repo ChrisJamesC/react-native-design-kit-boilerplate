@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: 352,
     height: 48,
+
+    /* Light/Neutral/G1000 */
+
     backgroundColor: 'green',
     borderRadius: 12,
   },
