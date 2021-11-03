@@ -1,4 +1,4 @@
-import { getDefaultConfig } from "expo/metro-config";
+const { getDefaultConfig } = require("expo/metro-config");
 
 const defaultConfig = getDefaultConfig(__dirname);
 
@@ -13,4 +13,4 @@ defaultConfig.transformer.getTransformOptions = async () => ({
   },
 });
 defaultConfig.watchFolders = [...defaultConfig.watchFolders, "./.storybook"];
-export default defaultConfig;
+module.exports = defaultConfig;
