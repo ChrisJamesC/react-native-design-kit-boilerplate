@@ -1,15 +1,16 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react-native';
-import MyButton from './Button';
+import React from "react";
+import type { ComponentStory, ComponentMeta } from "@storybook/react-native";
+
+import MyButton from "./Button";
 
 const MyButtonMeta: ComponentMeta<typeof MyButton> = {
-  title: 'Button',
+  title: "Button",
   component: MyButton,
   argTypes: {
-    onPress: { action: 'pressed the button' },
+    onPress: { action: "pressed the button" },
   },
   args: {
-    text: 'Hello World',
+    text: "Hello World",
     secondary: false,
   },
 };

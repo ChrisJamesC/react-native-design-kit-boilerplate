@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Primary 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "white",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "green",
+        "borderRadius": 12,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 48,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "position": "relative",
+        "width": 352,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "color": "#FFFFFF",
+          "display": "flex",
+          "flexGrow": 0,
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 24,
+          "marginHorizontal": 8,
+          "marginVertical": 0,
+          "top": 0,
+        }
+      }
+    >
+      Hello World
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button Secondary 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "white",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "red",
+        "borderRadius": 12,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 48,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "position": "relative",
+        "width": 352,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "color": "#FFFFFF",
+          "display": "flex",
+          "flexGrow": 0,
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 24,
+          "marginHorizontal": 8,
+          "marginVertical": 0,
+          "top": 0,
+        }
+      }
+    >
+      Hello World
+    </Text>
+  </View>
+</View>
+`;

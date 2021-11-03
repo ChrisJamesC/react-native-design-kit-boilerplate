@@ -11,6 +11,7 @@ A boilerplate to implement design kit libraries.
 
 ## Features: 
 - ✅ storybook
+- ✅ automatic jest snapshots (not images unfortunately) for each story.
 - ✅ expo preview for each PR
 - ✅ expo publish of the app on master
 - ✅ expo QR code on README
