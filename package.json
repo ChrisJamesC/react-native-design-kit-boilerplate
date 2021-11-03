@@ -9,6 +9,7 @@
     "eject": "expo eject",
     "storybook-watcher": "sbn-watcher",
     "lint": "eslint .",
+    "pretest": "sb-rn-get-stories",
     "test": "jest"
   },
   "dependencies": {
