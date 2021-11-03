@@ -7,10 +7,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "storybook-watcher": "sbn-watcher",
+    "storybook-watcher": "sbn-rn-watcher",
     "lint": "eslint .",
-    "pretest": "sb-rn-get-stories",
-    "test": "jest"
+    "test": "sb-rn-get-stories && jest"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
