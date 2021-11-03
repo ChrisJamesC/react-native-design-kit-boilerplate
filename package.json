@@ -8,7 +8,6 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "storybook-watcher": "sbn-rn-watcher",
-    "storybook-discover": "sb-rn-get-stories", 
     "lint": "eslint .",
     "test": "jest"
   },

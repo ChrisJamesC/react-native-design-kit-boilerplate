@@ -9,7 +9,5 @@ jobs:
         run: npm install
       - name: Run linter
         run: npm run lint
-      - name: discover storybook stories
-        run: npm run storybook-discover
       - name: Run tests
         run: npm run test
