@@ -2,12 +2,9 @@ import path from "path";
 
 import initStoryshots from "@storybook/addon-storyshots";
 
-// console.error(">>>>>> dirname", __dirname);
-
 initStoryshots({
   framework: "react-native", // Manually specify the project's framework
-  // configPath: path.join(__dirname, ".storybook/storybook.requires.js"),
-  configPath: ".storybook/Storybook.tsx",
-  integrityOptions: { cwd: path.join(__dirname, "src", "stories") },
+  configPath: path.join(__dirname, ".storybook/storybook.requires.js"),
+  // // configPath: ".storybook/Storybook.tsx"integrityOptions: { cwd: path.join(__dirname, "src", "stories") },
   // Other configurations
 });
