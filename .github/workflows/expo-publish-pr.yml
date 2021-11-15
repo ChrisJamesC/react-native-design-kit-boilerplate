@@ -15,7 +15,7 @@ jobs:
           expo-cache: true
           packager: npm
           token: ${{ secrets.EXPO_TOKEN }}
-          username: $${{ secrets.EXPO_CLI_USERNAME }}
+          username: chrisjamesc
       - run: npm install
       - run: expo publish --release-channel=pr-${{ github.event.number }}
       - uses: unsplash/comment-on-pr@master
